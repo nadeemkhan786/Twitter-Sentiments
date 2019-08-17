@@ -31,15 +31,15 @@ PrepareTwitter()
 
 Authentication<-function()
 {
-  consumer_key <-"RLVRbKtjxldw1kL6oPzqNHKSU"
+  consumer_key <-""
   
-  consumer_secret <- "XP4wQ2pSLJrmacEkxtjoYMi1kZd6mXnjBID0cAaav9oGqYEOLb"
-  access_token<-"973129845851897857-lkbOKKiR3cZ8dMD56BcerjKSlmQK4jN"
-  access_secret <- "t0bn4E2WNLfrA0hMfhRnYZqllTNbtazICLL4dy9xTetYL"
+  consumer_secret <- ""
+  access_token<-""
+  access_secret <- ""
   
   setup_twitter_oauth(consumer_key ,consumer_secret, access_token,  access_secret)
   
-  cred <- OAuthFactory$new(consumerKey='RLVRbKtjxldw1kL6oPzqNHKSU', consumerSecret='XP4wQ2pSLJrmacEkxtjoYMi1kZd6mXnjBID0cAaav9oGqYEOLb',requestURL='https://api.twitter.com/oauth/request_token',accessURL='https://api.twitter.com/oauth/access_token',authURL='https://api.twitter.com/oauth/authorize')
+  cred <- OAuthFactory$new(consumerKey='', consumerSecret='',requestURL='https://api.twitter.com/oauth/request_token',accessURL='https://api.twitter.com/oauth/access_token',authURL='https://api.twitter.com/oauth/authorize')
   
   cred$handshake(cainfo="cacert.pem")
   
